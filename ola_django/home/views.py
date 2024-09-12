@@ -1,5 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
-def home_views(request):
-    return HttpResponse("Esta e minha pagina home")
+def home_view(request):
+    return render(request, 'pasta_home/home.html')
+
+def teste_view(request):
+    return render(request, 'pasta_home/teste.html')

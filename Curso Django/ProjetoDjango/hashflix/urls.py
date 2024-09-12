@@ -1,5 +1,5 @@
 """
-URL configuration for project project.
+URL configuration for hashflix project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -16,14 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.shortcuts import render
-
-def global_view(request):
-    return render(request, 'global/index.html')
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('henrique/', include('henrique.urls')),
-    path('', global_view),
-    path('home/', include('home.urls')),
+    path('', include('filme.urls', namespace='filme')),
 ]
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
