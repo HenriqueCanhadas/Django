@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from home.data import posts
+
+
 
 def home_view(request):
 
@@ -13,7 +16,8 @@ def teste_view(request):
 
     context = {
         'text' : 'Olá Teste',
-        'title' : 'TESTE'
+        'title' : 'TESTE',
+        'posts' : posts
     }
 
     return render(request, 'pasta_home/teste.html',context)

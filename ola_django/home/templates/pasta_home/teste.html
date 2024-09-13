@@ -1,5 +1,8 @@
 {% extends "global/index.html" %}
-
 {% block titulo %}{{title}}{% endblock titulo %}
-{% block texto %}VOCE ESTA NA PAGINA DE TESTE, OI BICHÃOO{% endblock texto %}
-{% block texto1 %}{{text}}{% endblock texto1 %}
+
+{% block posts %}
+    {% for post in posts %}
+        {% include "global/partials/postblock.html" %}
+    {% endfor %}
+{% endblock posts %}

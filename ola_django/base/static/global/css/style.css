@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    background-color: #f1f1f1;
+}
+
+.content{
+    display: grid;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.post{
+    background:white;
+    padding: 1.5rem;
+    box-shadow: 5px 2px 5px 2px rgb(0, 0, 0, 0.3);
+}
+
+@media (min-width: 600px) {
+    .content{
+        grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+    }
+    
+}
