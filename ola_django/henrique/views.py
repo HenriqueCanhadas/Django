@@ -3,7 +3,7 @@ from django.shortcuts import render
 def henrique_view(request):
 
     context = {
-        'text' : 'Olá henrique',
+        'text' : 'Olá Henrique',
         'title' : 'Henrique'
     }
 
@@ -11,7 +11,7 @@ def henrique_view(request):
 
 def vitor_view(request):
     context = {
-        'text' : 'Olá vitor',
+        'text' : 'Olá Vitor',
         'title' : 'Vitor'
     }
     return render(request, 'pasta_henrique/vitor.html', context)

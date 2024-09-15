@@ -5,9 +5,11 @@
     {% if text %}
     <h1>{% block texto %}{{text}}{% endblock texto %}</h1>
     {% endif %}
+    {% block Mensagem %}{% endblock Mensagem %}
+    {% if posts %}
     <main class="content">
         {% block posts %}{% endblock posts %}
-        {% block Home %}{% endblock Home %}
-    </main>    
+    </main>
+    {% endif %}    
 </body>
 </html>

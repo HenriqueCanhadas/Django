@@ -2,6 +2,12 @@
 
 {% block titulo %}{{title}}{% endblock titulo %}
 
-{% block Home %}
-VOCE ESTA NA PAGINA INICIAL, BEM VINDO BICHÃOO
-{% endblock Home %}
+{% block Mensagem %}
+<h1>VOCE ESTA NA PAGINA INICIAL, BEM VINDO BICHÃOO</h1>
+{% endblock Mensagem %}
+
+{% block posts %}
+    {% for post in posts %}
+        {% include "global/partials/postblock.html" %}
+    {% endfor %}
+{% endblock posts %}

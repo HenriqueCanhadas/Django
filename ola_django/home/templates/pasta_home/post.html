@@ -1,0 +1,22 @@
+{% extends "global/index.html" %}
+
+{% block titulo %}{{ title }}{% endblock titulo %}
+
+{% block Mensagem %}
+<h1>VOCÊ ESTÁ NA PÁGINA INICIAL, BEM-VINDO!</h1>
+{% endblock Mensagem %}
+
+{% block posts %}
+    {% for post in posts %}
+    <article class="post single-post">
+        <header>
+            <h1 class="post__title">
+                <a href="{% url "Home:post" post.id %}">
+                    {{ post.title }}
+                </a>
+            </h1>
+        </header>
+        <div class="post__body">{{ post.body }}</div>
+    </article>
+    {% endfor %}
+{% endblock posts %}
