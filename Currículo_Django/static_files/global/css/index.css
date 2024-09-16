@@ -1,0 +1,180 @@
+/* Reseta estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #ddd;
+    line-height: 1.6;
+    background-color: #1a1a1a; /* Fundo preto */
+}
+
+/* Cabeçalho hero */
+.hero {
+    background-color: #333; /* Fundo cinza escuro */
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.cta-button a {
+    background-color: #ddd;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta-button a:hover {
+    background-color: #bbb;
+}
+
+/* Conteúdo hero */
+.hero-content {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+}
+
+.hero-content .btn {
+    padding: 15px 30px;
+    background-color: #ddd;
+    color: #333;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-content .btn:hover {
+    background-color: #bbb;
+}
+
+/* Seção de recursos */
+.features {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1a1a1a; /* Fundo preto */
+    padding: 60px 20px;
+}
+
+.feature-item {
+    max-width: 300px;
+    text-align: center;
+    color: #ddd;
+}
+
+.feature-item h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #fff; /* Títulos em branco */
+}
+
+.feature-item p {
+    color: #bbb;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    list-style: none;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+    .features {
+        display: flex;
+        justify-content: space-around;
+        align-items: stretch; /* Faz com que todos os itens tenham a mesma altura */
+        background-color: #1a1a1a; /* Fundo preto */
+        padding: 60px 20px;
+    }
+    
+    .feature-item {
+        max-width: 300px;
+        text-align: center;
+        color: #ddd;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Centraliza o conteúdo no topo */
+        flex-grow: 1; /* Garante que todas as colunas cresçam igualmente */
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+}

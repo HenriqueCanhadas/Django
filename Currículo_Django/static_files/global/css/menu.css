@@ -1,0 +1,99 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte moderna e elegante */
+    overflow-x: hidden;
+    background-color: #f4f4f4;
+}
+
+/* Esconder checkbox */
+#menu_toggle {
+    display: none;
+}
+
+/* Menu lateral escondido por padrão */
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.9); /* Transparência para um efeito moderno */
+    padding-top: 60px;
+    transform: translateX(100%);
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    z-index: 1000;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5); /* Sombra sutil para dar profundidade */
+}
+
+/* Mostrar a barra lateral quando o checkbox está marcado */
+#menu_toggle:checked + .menu_icon + .menu {
+    transform: translateX(0);
+    background-color: rgba(0, 0, 0, 0.95); /* Efeito mais escuro ao abrir */
+}
+
+/* Ícone de hambúrguer */
+.menu_icon {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1001;
+    transition: color 0.3s ease;
+}
+
+.menu_icon:hover {
+    color: #ccc; /* Cor de destaque ao passar o mouse */
+}
+
+/* Menu de links */
+.menu_links {
+    list-style: none;
+    padding: 0;
+}
+
+.menu_links li {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.menu_links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300; /* Estilo mais leve para sofisticação */
+    display: block;
+    padding: 10px;
+    transition: color 0.3s, background-color 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.menu_links a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo sutil ao passar o mouse */
+    color: #fff;
+}
+
+/* Ajuste no conteúdo principal */
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+    .menu {
+        width: 220px;
+    }
+
+    .menu_icon {
+        font-size: 24px;
+    }
+
+    .menu_links a {
+        font-size: 18px;
+    }
+}
