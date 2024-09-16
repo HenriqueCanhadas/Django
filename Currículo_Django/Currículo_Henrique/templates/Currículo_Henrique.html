@@ -1,11 +1,65 @@
 {% load static %}
-{% include "global/partials/head.html" %}
-
+{% include "global/partials/menu.html" %}
 <head>
-    <link rel="stylesheet" href="{% static 'global/css/green.red' %}">
+    <link rel="stylesheet" href="{% static 'global/css/Curriculo.css' %}">
 </head>
 
-<body>
-    <h1>Teste Henrique</h1>
+<body class="curriculo">
+    <div class="container">
+        <h1>Henrique Pedrosa Canhadas</h1>
+        <div class="contact-info">
+            <p>Solteiro, Brasileiro, 21 anos</p>
+            <p>Rua das Grumixamas, nº 125 Ap 51A - Jabaquara</p>
+            <p>São Paulo - SP, Cep: 04349-000</p>
+            <p>Tel.: (11) 5012-4113 | Cel.: (11) 9787-0071</p>
+            <p>Email: <a href="mailto:pedrosacanhadas@gmail.com">pedrosacanhadas@gmail.com</a></p>
+        </div>
+
+        <div class="objective section">
+            <h2>Objetivo</h2>
+            <p>Área de Desenvolvimento ou Análise de Dados</p>
+        </div>
+
+        <div class="qualifications section">
+            <h2>Qualificações</h2>
+            <ul>
+                <li>Conhecimento em linguagem Python, C, Javascript, CSS, HTML, Java</li>
+                <li>Conhecimento em banco de dados como MySQL</li>
+            </ul>
+        </div>
+
+        <div class="experience section">
+            <h2>Experiência na Área</h2>
+            <p>Desenvolvimento de automação utilizando Python com Selenium.</p>
+        </div>
+
+        <div class="education section">
+            <h2>Formação Acadêmica</h2>
+            <ul>
+                <li><strong>Instituto de Ensino Divina Pastora</strong> - Conclusão: 12/2020</li>
+                <li><strong>Faculdade Anhembi Morumbi</strong> - Ciências da Computação (Início: 01/2021, Previsão de Conclusão: 12/2024)</li>
+            </ul>
+        </div>
+
+        <div class="skills section">
+            <h2>Informática</h2>
+            <ul>
+                <li>Conhecimento com as bibliotecas Streamlit, Pandas, Openpyxl, Selenium, PyAutoGUI, OS, Django (Python)</li>
+            </ul>
+        </div>
+
+        <div class="languages section">
+            <h2>Idioma</h2>
+            <ul>
+                <li>Inglês - Conclusão: 2020 (Instituição: CCAA)</li>
+            </ul>
+        </div>
+
+        <div class="links section">
+            <h2>Links</h2>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/henrique-pedrosa/">https://www.linkedin.com/in/henrique-pedrosa/</a></p>
+            <p>GitHub: <a href="https://github.com/HenriqueCanhadas">https://github.com/HenriqueCanhadas</a></p>
+        </div>
+    </div>
 </body>
-</html> 
+</html>

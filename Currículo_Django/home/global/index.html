@@ -1,6 +1,47 @@
 {% include "global/partials/head.html" %}
+{% include "global/partials/menu.html" %}
+{% load static %}
+
+<head>
+    <link rel="stylesheet" href="{% static 'global/css/index.css' %}">
+</head>
 <body>
-    <h1>{% block texto %} Globlal {% endblock texto %}</h1>
-    <h2>teste global</h2>
+    <header class="hero">
+        <nav>
+            <div class="logo">Desenvolvido em Django por Henrique</div>
+        </nav>
+        <div class="hero-content">
+            <h1>Compartilhamento de Projetos e Automações</h1>
+            <p>Este site foi desenvolvido em Django para centralizar e compartilhar os principais projetos e automações que criei, além do meu currículo e experiência na área de programação, tecnologia e parte em meio ambiente. Estou em busca de novas oportunidades na área de desenvolvimento.</p>
+            <a href="#" class="btn">Ver Projetos</a>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="feature-item">
+            <h2>Automações Personalizadas</h2>
+            <p>Automatizações desenvolvidas para otimizar processos e melhorar a eficiência em diversas áreas, como meio ambiente e extração de dados em larga escala.</p>
+        </div>
+        <div class="feature-item">
+            <h2>Currículo e Experiência</h2>
+            <p>Na minha trajetória profissional, com mais de 2 anos de experiência na área de TI. Meu currículo está disponível no menu superior.</p>
+        </div>
+        <div class="feature-item">
+            <h2>Ferramentas de Automação</h2>
+            <p>Acesse as principais ferramentas e soluções que desenvolvi para facilitar a tomada de decisões e automatizar processos complexos. Estou sempre buscando novos desafios na área de desenvolvimento.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Henrique Canhadas. Todos os direitos reservados. Site desenvolvido com Django.</p>
+            <ul class="social-links">
+                <li><a href="https://www.linkedin.com/in/henrique-pedrosa/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/HenriqueCanhadas" target="_blank">GitHub</a></li>
+                <li><a href="mailto:cleflahc@gmail.com" target="_blank">Contato</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>

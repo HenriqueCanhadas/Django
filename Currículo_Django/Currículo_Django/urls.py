@@ -23,7 +23,7 @@ def view(request):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', view),
+    path('', view, name='url_inicial'),
     path('Curriculo/', include('Currículo_Henrique.urls')),
     path('Projeto/', include('Projeto_Canhadas.urls')),
 ]
