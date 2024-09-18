@@ -1,6 +1,8 @@
 {% load static %}
 <head>
+    {% block menu_css %}
     <link rel="stylesheet" href="{% static 'global/css/menu.css' %}">
+    {% endblock menu_css %}
 </head>
 <!-- Checkbox para o menu toggle -->
 <input type="checkbox" id="menu_toggle">
@@ -8,10 +10,16 @@
 
 <!-- Menu lateral -->
 <nav class="menu">
-    <ul class="menu_links">
-        <li><a href="{% url 'url_inicial' %}">Pagina Inicial</a></li>
-        <li><a href="{% url 'Curriculo:url_curriculo' %}">Certificado</a></li>
+    <ul class="menu_section">
+        <li class="menu_title">Projetos:</li>
+        <li><a href="{% url 'url_inicial' %}">Página inicial</a></li>
+        <li><a href="{% url 'Curriculo:url_curriculo' %}">Currículo</a></li>
         <li><a href="https://projetocanhadas.streamlit.app/" target="_blank">Projeto Canhadas</a></li>
     </ul>
+    <ul class="menu_section">
+        <li class="menu_title">Links Sociais:</li>
+        <li><a href="https://www.linkedin.com/in/henrique-pedrosa/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/HenriqueCanhadas" target="_blank">GitHub</a></li>
+        <li><a href="mailto:cleflahc@gmail.com" target="_blank">Contato</a></li>
+    </ul>
 </nav>
-

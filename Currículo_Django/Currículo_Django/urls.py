@@ -19,7 +19,10 @@ from django.shortcuts import render
 from django.urls import path, include
 
 def view(request):
-    return render(request, 'global/index.html')
+    context = {
+    'title' : 'Página inicial',
+    }
+    return render(request, 'global/index.html', context)
 
 urlpatterns = [
     path('admin/', admin.site.urls),

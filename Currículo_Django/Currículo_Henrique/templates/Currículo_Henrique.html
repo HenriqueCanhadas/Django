@@ -1,9 +1,19 @@
 {% load static %}
-{% include "global/partials/menu.html" %}
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
+    <meta charset="UTF-8">
+    <title>{% block titulo %}{{title}}{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'global/css/Curriculo.css' %}">
+    <link rel="shortcut icon" href="{% static 'global/img/H.png' %}">
+    {% block menu_css %}
+    
+    {% endblock %}
+    {% block extra_head %}{% endblock %}
 </head>
 
+
+{% include "global/partials/menu.html" %}
 <body class="curriculo">
     <div class="container">
         <h1>Henrique Pedrosa Canhadas</h1>
