@@ -3,7 +3,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>{% block titulo %}{{title}}{% endblock %}</title>
+    <title>{% block titulo %}Currículo - Henrique Pedrosa Canhadas{% endblock %}</title>
     <link rel="stylesheet" href="{% static 'global/css/Curriculo.css' %}">
     <link rel="shortcut icon" href="{% static 'global/img/H.png' %}">
     {% block menu_css %}
@@ -14,7 +14,7 @@
 
 
 {% include "global/partials/menu.html" %}
-<body class="curriculo">
+<body>
     <div class="container">
         <h1>Henrique Pedrosa Canhadas</h1>
         <div class="contact-info">
@@ -34,13 +34,35 @@
             <h2>Qualificações</h2>
             <ul>
                 <li>Conhecimento em linguagem Python, C, Javascript, CSS, HTML, Java</li>
-                <li>Conhecimento em banco de dados como MySQL</li>
+                <li>Conhecimento em bibliotecas em Python como Django, Selenium e Pandas</li>
             </ul>
         </div>
 
         <div class="experience section">
             <h2>Experiência na Área</h2>
-            <p>Desenvolvimento de automação utilizando Python com Selenium.</p>
+
+            <div class="job">
+                <h3>Analista de Infraestrutura de TI Júnior <span class="job-dates">(01/2024 - Atual)</span></h3>
+                <ul class="job-tasks">
+                    <li>Desenvolvimento de soluções automatizadas para integração de cálculos no Excel, otimizando o tempo de processamento em até 30%.</li>
+                    <li>Criação de scripts de automação para aumentar a eficiência de tarefas repetitivas, reduzindo erros manuais e aumentando a produtividade da equipe.</li>
+                    <li>Projeto e implementação de sistemas automáticos de tabelamento para gestão de grandes volumes de dados, facilitando a análise e a tomada de decisões estratégicas.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h3>Estagiário de TI <span class="job-dates">(05/2022 - 12/2023)</span></h3>
+                <ul class="job-tasks">
+                    <li>Configuração de redes corporativas, garantindo a conectividade segura e eficiente dos dispositivos de funcionários.</li>
+                    <li>Instalação e manutenção de VPNs, assegurando o acesso remoto seguro e a continuidade do trabalho para equipes distribuídas.</li>
+                    <li>Realização de upgrades de hardware (SSD e Memória RAM) em notebooks e desktops, aumentando o desempenho de máquinas em até 40%.</li>
+                    <li>Administração do CPD (Centro de Processamento de Dados), com experiência prática em servidores, switches e sistemas de armazenamento (storage).</li>
+                    <li>Monitoramento e manutenção de firewall (Algar, Telium), garantindo a proteção da rede contra ameaças externas.</li>
+                    <li>Diagnóstico e solução de problemas de rede utilizando comandos avançados (ping, ipconfig, flushdns, gpupdate /force), assegurando conectividade constante e estável.</li>
+                    <li>Manutenção de computadores, incluindo hardware e software, aumentando a vida útil dos equipamentos e evitando falhas críticas.</li>
+                    <li>Diagnóstico técnico aprofundado de problemas de desempenho em máquinas, aplicando soluções eficazes para restaurar a funcionalidade e melhorar a eficiência.</li>
+                </ul>
+            </div>
         </div>
 
         <div class="education section">
@@ -52,9 +74,12 @@
         </div>
 
         <div class="skills section">
-            <h2>Informática</h2>
+            <h2>Competências</h2>
             <ul>
-                <li>Conhecimento com as bibliotecas Streamlit, Pandas, Openpyxl, Selenium, PyAutoGUI, OS, Django (Python)</li>
+                <li>Python (Streamlit, Pandas, Openpyxl, Selenium, PyAutoGUI, OS, Django, xlwings, Tkinter, CustomTkinter)</li>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Java</li>
+                <li>Git e GitHub</li>
             </ul>
         </div>
 
