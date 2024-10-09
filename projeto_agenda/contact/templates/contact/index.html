@@ -1,1 +1,47 @@
 {% extends "global/base.html" %}
+
+{% block content %}
+    <div class="responsive-table">
+        <table class="contacts-table">
+        <caption class="table-caption">
+            Contacts
+        </caption>
+        
+        <thead>
+            <tr class="tablerow table-row-header">
+                <th class="table-header">ID</th>
+                <th class="table-header">Primeiro Nome</th>
+                <th class="table-header">Ultimo Nome</th>
+                <th class="table-header">Celular</th>
+                <th class="table-header">Email</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for contact in contacts %}
+                <tr class="table-row">
+                    <td class="tablecel">
+                        <a href="#" class="table-link">
+                            {{contact.id}}
+                        </a>
+                    </td>
+                    <td class="tablecel">
+                        {{contact.primeiro_nome}}
+                    </td>
+                    <td class="tablecel">
+                        {{contact.ultimo_nome}}
+                    </td>
+                    <td class="tablecel">
+                        {{contact.celular}}
+                    </td>
+                    <td class="tablecel">
+                        {{contact.email}}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+
+        </table>
+    </div>
+{% endblock content %}
+

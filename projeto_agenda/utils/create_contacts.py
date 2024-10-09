@@ -21,8 +21,8 @@ if __name__ == '__main__':
 
     from contact.models import Category, Contact
 
-    #Contact.objects.all().delete()
-    #Category.objects.all().delete()
+    Contact.objects.all().delete()
+    Category.objects.all().delete()
 
     fake = faker.Faker('pt_BR')
     categories = ['Amigos', 'Família', 'Conhecidos']
@@ -39,6 +39,7 @@ if __name__ == '__main__':
         email = profile['mail']
         primeiro_nome, ultimo_nome = profile['name'].split(' ', 1)
         celular = fake.phone_number()
+        email = fake.email()
         created_date:datetime = fake.date_this_year()
         description = fake.text(max_nb_chars=100)
         category = choice(django_categories)
@@ -48,6 +49,7 @@ if __name__ == '__main__':
                 primeiro_nome = primeiro_nome,
                 ultimo_nome = ultimo_nome,
                 celular = celular,
+                email = email,
                 created_date = created_date,
                 description = description,
                 category = category,
