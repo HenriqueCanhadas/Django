@@ -1,0 +1,141 @@
+{% extends "global/index.html" %}
+{% load static %}
+
+{% block section %}
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Bem vindo, Me chamo</h3>
+            <h1>Henrique Canhadas</h1>
+            <h3>Sou <span class="multipe-text"></span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam non nam odio eligendi, neque earum.</p>
+            <div class="social-media">
+                <a href="https://github.com/henriquecanhadas" target="_blank"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/henrique-pedrosa/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                <a href="https://www.instagram.com/henrique_canhadas" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="https://www.youtube.com/@controlegamer9360" target="_blank"><i class='bx bxl-youtube' ></i></a>
+            </div>
+            <a href="{% static 'global/file/Curriculo_Henrique_P_Canhadas_DEV.pdf' %}" class="btn" download="Curriculo.pdf">Baixar CV</a>
+        </div>
+        <div class="home-img">
+            <img src="{% static 'global/img/home.png' %}" alt="">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="{% static 'global/img/about.png' %}" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">Sobre <span>Eu</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, facere. Eligendi aliquid inventore dolore repellat odit omnis itaque modi. Minus recusandae ad deserunt ducimus et facere quis odit laboriosam corrupti dolorem id cum nesciunt veniam consequatur expedita, sed voluptatibus quia quibusdam sapiente! Inventore repudiandae omnis possimus explicabo, vel temporibus ipsum.</p>
+            <a href="" class="btn">Leia Mais</a>
+        </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading">Meus <span>Serviços</span></h2>  
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bxl-python'></i>
+                <h3>Projeto Python</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo non nihil fugit consectetur, minima delectus qui veritatis repellendus quasi reiciendis?</p>
+                <a href="#" class="btn">Leia Mais</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-table'></i>
+                <h3>Projeto Tabelamento</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo non nihil fugit consectetur, minima delectus qui veritatis repellendus quasi reiciendis?</p>
+                <a href="#" class="btn">Leia Mais</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxs-cog'></i>
+                <h3>Projeto Automação</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo non nihil fugit consectetur, minima delectus qui veritatis repellendus quasi reiciendis?</p>
+                <a href="#" class="btn">Leia Mais</a>
+            </div>
+        </div> 
+    </section>
+    
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Ultimos <span>Projetos</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="{% static 'global/img/portfolio1.jpg' %}" alt="">
+                <div class="portfolio-layer">
+                    <h4>Wed design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quisquam.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>  
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="{% static 'global/img/portfolio2.jpg' %}" alt="">
+                <div class="portfolio-layer">
+                    <h4>Wed design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quisquam?</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>  
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="{% static 'global/img/portfolio3.jpg' %}" alt="">
+                <div class="portfolio-layer">
+                    <h4>Wed design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quisquam?</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>  
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="{% static 'global/img/portfolio4.jpg' %}" alt="">
+                <div class="portfolio-layer">
+                    <h4>Wed design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quisquam</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>  
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="{% static 'global/img/portfolio5.jpg' %}" alt="">
+                <div class="portfolio-layer">
+                    <h4>Wed design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quisquam</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>  
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="{% static 'global/img/portfolio6.jpg' %}" alt="">
+                <div class="portfolio-layer">
+                    <h4>Wed design</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quisquam</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contate-<span>Me !</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Nome Completo">
+                <input type="email" placeholder="Endereço de Email">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Telefone/Celular">
+                <input type="text" placeholder="Assunto do Email">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+            <input type="submit" value="Enviar mensagem" class="btn">
+        </form>
+    </section>
+
+{% endblock section %}
