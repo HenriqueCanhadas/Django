@@ -9,12 +9,12 @@
             <h3>Bem vindo, Me chamo</h3>
             <h1>Henrique Canhadas</h1>
             <h3>Sou <span class="multipe-text"></span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam non nam odio eligendi, neque earum.</p>
+            <p>Especialista em redes e programação com foco em Python, desenvolvo interfaces e soluções funcionais. Veja como posso agregar valor aos seus projetos.</p>
             <div class="social-media">
                 <a href="https://github.com/henriquecanhadas" target="_blank"><i class='bx bxl-github' ></i></a>
                 <a href="https://www.linkedin.com/in/henrique-pedrosa/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
                 <a href="https://www.instagram.com/henrique_canhadas" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
-                <a href="https://www.youtube.com/@controlegamer9360" target="_blank"><i class='bx bxl-youtube' ></i></a>
+                <a href="#contact"><i class='bx bxs-envelope'></i></a>
             </div>
             <a href="{% static 'global/file/Curriculo_Henrique_P_Canhadas_DEV.pdf' %}" class="btn" download="Curriculo.pdf">Baixar CV</a>
         </div>
@@ -26,36 +26,54 @@
     <!-- about section design -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="{% static 'global/img/about.png' %}" alt="">
+            <img src="{% static 'global/img/about.png' %}" alt="Foto de [Seu Nome]">
         </div>
         <div class="about-content">
-            <h2 class="heading">Sobre <span>Eu</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, facere. Eligendi aliquid inventore dolore repellat odit omnis itaque modi. Minus recusandae ad deserunt ducimus et facere quis odit laboriosam corrupti dolorem id cum nesciunt veniam consequatur expedita, sed voluptatibus quia quibusdam sapiente! Inventore repudiandae omnis possimus explicabo, vel temporibus ipsum.</p>
-            <a href="" class="btn">Leia Mais</a>
+            <h2 class="heading">Quem Sou <span>Eu</span>?</h2>
+            <p>
+                Analista de Infraestrutura Júnior e graduando em Ciências da Computação pela Universidade Anhembi Morumbi, com foco em Desenvolvimento Back-end, Front-end e Automação de Processos.
+            </p>
+            <p id="texto-completo" style="display: none;">
+                Tenho experiência no desenvolvimento de soluções personalizadas para automação de cálculos e otimização de processos, integrando bases de dados e otimizando tarefas para melhorar a eficiência operacional. Minha principal expertise está no desenvolvimento back-end com Python e Django, além de uma sólida base em front-end com HTML, CSS e JavaScript.
+                <br><br>
+                Minhas habilidades também abrangem manutenção de redes corporativas, configuração de dispositivos de rede e suporte de hardware. No momento, estou aprofundando minhas competências em Data Center e em linguagens de programação como Python, Java e C, com o objetivo de consolidar conhecimentos tanto em infraestrutura quanto em desenvolvimento.
+                <br><br>
+                Aberto a novos desafios e aprendizagens, tanto em redes quanto em desenvolvimento, busco constantemente aprimorar minhas habilidades para agregar valor estratégico com soluções técnicas eficientes e inovadoras.
+            </p>
+            <a href="javascript:void(0);" onclick="mostrarTextoCompleto()" id="leia-mais" class="btn">Leia Mais</a>
         </div>
     </section>
+    
+    <script>
+        function mostrarTextoCompleto() {
+            var textoCompleto = document.getElementById("texto-completo");
+            var botaoLeiaMais = document.getElementById("leia-mais");
+            
+            if (textoCompleto.style.display === "none") {
+                textoCompleto.style.display = "block";
+                botaoLeiaMais.style.display = "none"; // Esconde o botão após expandir o texto
+            }
+        }
+    </script>
 
     <!-- services section design -->
     <section class="services" id="services">
         <h2 class="heading">Meus <span>Serviços</span></h2>  
         <div class="services-container">
             <div class="services-box">
-                <i class='bx bxl-python'></i>
-                <h3>Projeto Python</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo non nihil fugit consectetur, minima delectus qui veritatis repellendus quasi reiciendis?</p>
-                <a href="#" class="btn">Leia Mais</a>
+                <i class='bx bxl-xing'></i>
+                <h3>Projeto Excel</h3>
+                <p>Desenvolvido em Python com Openpyxl, Pandas e Xlwings, este projeto inclui uma interface CustomTkinter para consolidar dados dispersos em várias abas de uma planilha Excel em uma única aba organizada. A automação facilita o acesso e a interpretação dos dados, tornando o processo mais rápido e eficaz.</p>
             </div>
             <div class="services-box">
                 <i class='bx bx-table'></i>
                 <h3>Projeto Tabelamento</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo non nihil fugit consectetur, minima delectus qui veritatis repellendus quasi reiciendis?</p>
-                <a href="#" class="btn">Leia Mais</a>
+                <p>Com uma automação em Python, criei este projeto para otimizar o tabelamento e a organização de dados em planilhas Excel. Usando Openpyxl e Pandas, a solução transforma uma planilha com dados brutos em uma nova versão organizada e padronizada, ideal para facilitar a análise.</p>
             </div>
             <div class="services-box">
                 <i class='bx bxs-cog'></i>
                 <h3>Projeto Automação</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo non nihil fugit consectetur, minima delectus qui veritatis repellendus quasi reiciendis?</p>
-                <a href="#" class="btn">Leia Mais</a>
+                <p>Este projeto automatiza um processo repetitivo usando Python com Selenium, WebDriver e email.message. Configurada para realizar login em um site, selecionar dados e baixar arquivos a cada 2 horas, a solução também notifica o cliente por e-mail em caso de erro, simplificando o fluxo de trabalho.</p>
             </div>
         </div> 
     </section>

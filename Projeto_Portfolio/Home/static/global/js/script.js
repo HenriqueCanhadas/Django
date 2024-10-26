@@ -57,3 +57,14 @@ const typed = new Typed('.multipe-text', {
     backDelay:1000,
     loop:true
 });
+
+/*==================== LER MAIS ====================*/
+function mostrarTextoCompleto() {
+    var textoCompleto = document.getElementById("texto-completo");
+    var botaoLeiaMais = document.getElementById("leia-mais");
+    
+    if (textoCompleto.style.display === "none") {
+        textoCompleto.style.display = "block";
+        botaoLeiaMais.style.display = "none"; // Esconde o botão após expandir o texto
+    }
+}
