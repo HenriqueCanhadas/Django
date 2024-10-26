@@ -51,7 +51,7 @@ ScrollReveal().reveal('.home-content h1, .about-img', {origin:'left'});
 ScrollReveal().reveal('.home-content p, .about-content', {origin:'right'});
 /*==================== typed js ====================*/
 const typed = new Typed('.multipe-text', {
-    strings:['Desenvolvedor Python','Redes' ,'Desenvolvedor Front-end','Programador', 'Desenvolvedor Back-end'],
+    strings:['Desenvolvedor Python','Analista de Redes' ,'Desenvolvedor Front-end','Programador', 'Desenvolvedor Back-end'],
     typeSpeed:100,
     backSpeed:100,
     backDelay:1000,
